@@ -10,9 +10,6 @@ function Navbar() {
           <Link to='/shopping/'>Shopping</Link>
         </li>
         <li>
-          <Link to='/shopping/'>Home</Link>
-        </li>
-        <li>
           <Link to='/shop'>Shop</Link>
         </li>
         <li>
