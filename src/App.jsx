@@ -12,7 +12,7 @@ function App() {
     <Routes>
       {/* Pages with layout */}
       <Route
-        path='/'
+        path='/shopping'
         element={
           <Layout>
             <Home />
