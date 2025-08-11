@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 1.5rem;
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 20px;
+  /* left: -20px; */
+  width: 90%;
+  z-index: 1000;
+}
+
+/* Prevent body content from being hidden behind navbar if using fixed */
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Logo or brand name */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+/* Navigation links */
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+/* Light theme override */
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: #ffffff;
+    color: #213547;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar .logo {
+    color: #213547;
+  }
+
+  .navbar ul li a {
+    color: #213547;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #f0f0f0;
+    color: #646cff;
+  }
+}
