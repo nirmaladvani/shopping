@@ -7,7 +7,7 @@ function Navbar() {
       {/* <div className='logo'>Shopping</div> */}
       <ul>
         <li style={{ left: 0 }}>
-          <Link to='/'>Shopping</Link>
+          <Link to='/shopping'>Shopping</Link>
         </li>
         <li>
           <Link to='/'>Home</Link>
